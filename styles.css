@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+.footer-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-wrapper1 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #3fa3dd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.icon-wrapper1 svg {
+  z-index: 10;
+  color: white;
+  width: 1rem;
+}
+
+.icon-wrapper2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: gray;
+  transition: transform 0.3s ease; /* Añadimos la transición de transformación */
+  transform: translateY(100%); /* Empieza escondido */
+}
+
+.icon-wrapper1:hover .icon-wrapper2 {
+  transform: translateY(0); /* Muestra cuando se hace hover */
+}
