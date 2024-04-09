@@ -17,20 +17,20 @@ h1 {
 
 .icon-wrapper1 {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: #3fa3dd;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10%;
+  border-radius: 20%;
   overflow: hidden;
 }
 
 .icon-wrapper1 svg {
   z-index: 10;
   color: white;
-  width: 1rem;
+  width: 1.8rem;
 }
 
 .icon-wrapper2 {
@@ -42,7 +42,7 @@ h1 {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: gray;
+  background-color: #10378b;
   transition: transform 0.3s ease; /* Añadimos la transición de transformación */
   transform: translateY(100%); /* Empieza escondido */
 }
